@@ -302,7 +302,7 @@ ghostBookshelf.Model = ghostBookshelf.Model.extend({
         }
     },
 
-    onCreated(model, attrs, options) {
+    onCreated(model, options) {
         addAction(model, 'added', options);
     },
 
@@ -363,7 +363,7 @@ ghostBookshelf.Model = ghostBookshelf.Model.extend({
             });
     },
 
-    onUpdated(model, attrs, options) {
+    onUpdated(model, options) {
         addAction(model, 'edited', options);
     },
 
